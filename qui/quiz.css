@@ -1,0 +1,218 @@
+/* 
+.title{
+    margin-top: 15em;
+}
+.quiz{
+    margin-top: 15em;
+    
+}
+body{
+    background: black;
+}
+*/
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+main {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Title Section */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    font-size: 2em;
+    color: #1e90ff;
+    margin: 0;
+}
+
+.title button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.title button:hover {
+    background-color: #155fa0;
+}
+
+/* Quiz Section */
+.quiz {
+    display: none;
+}
+
+#quest {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+label:hover {
+    background-color: #f1f1f1;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Button Styling */
+button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #155fa0;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Result Section */
+#result {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    #quest {
+        font-size: 1.3em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+.wr p{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: green;
+    height: 25px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+}
+.wr button{
+    background: green;
+    height: 5rem;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 20px;
+    color: white;
+    align-items: top;
+}
+.wrong p{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: green;
+    height: 25px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+}
+.homie{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    
+    
+    margin: 10px;
+    
+    color: white;
+}
+#display{
+    position: absolute;
+    text-align: center;
+    left: 40%;
+    margin: 10px;
+    top: 0;
+    
+    text-decoration: underline;
+    height: 20px;
+    color: #1e90ff;
+}
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+center .title, bu button {
+    animation-name: slideInLeft;
+    animation-duration: 3s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+}
+#final{
+    
+    
+    background: green;
+    height: 70px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+}

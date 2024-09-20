@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I know my celebrity quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div id="display">Score</div>
+    <div class="wr" style="display: none;">
+                <p>Correct 🎁</p>
+                
+            </div>
+            <div class="wrong" style="display: none;">
+                <p>Wrong 😣</p>
+            </div>
+           <div class="homie">
+           <button class="hom" onclick="home()" >Home page</button> </div>
+    <main>
+        
+        <center>
+            <div class="title"><h2>Welcome to this interesting game</h2>
+            <br>
+            <button class="bu" type="submit" onclick="sta()">Start</button>
+            </div>
+        </center>
+        
+        <center>
+            <div class="quiz" style="display: none;">
+                <p id="quest">What is blah blah</p>
+                <label><input id="ansa" type="radio" name="choice"><span id="a_text">choice a</span></input></label>
+            
+            <br>
+            <label><input id="ansb" type="radio" name="choice"><span id="b_text">choice b</span></input></label>
+            
+            <br>
+            <label><input id="ansc" type="radio" name="choice"><span id="c_text">choice c</span></input></label>
+            <br>
+            <hr>
+            <button class="bac" onclick="back()">🔙</button>
+            <button onclick="next()">Next</button>
+            </div>
+            
+             <div id="final" style="display: none;">
+                 
+             </div>   
+            
+        </center>
+    </main>
+    
+    
+    <script src="quiz.js"></script>
+</body>
+</html>
